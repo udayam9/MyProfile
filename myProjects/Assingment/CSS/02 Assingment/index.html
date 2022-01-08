@@ -7,7 +7,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        body{margin: 0}
+        body{
+            height: 100%;
+            position: relative;
+            margin: 0}
         header{
             height: 80px;
             position: relative;
@@ -24,6 +27,7 @@
             right: 0;
             top: 0;
             bottom: 0;
+            right : 50px;
             font-family: 'Bebas Neue', cursive;
             list-style: none;
 
@@ -36,40 +40,62 @@
             cursor: pointer ;
             color: red;
         }
-        main{
-            border: 1px solid red;
+        main{min-height:680px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
             position: relative;
+        }
+        main>nav{
+            width: 300px;
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 0;
+            bottom: 0;
         }
         nav>ul{
-            border: solid rebeccapurple 2px;
-            color: white;
-            width: 250px;
-            height: 800px;
-            background-color: rebeccapurple;
+
             list-style: none;
         }
+        nav>ul>li{
+            padding: 10px 0 20px 0;
+            font-size: 20px;
+            color: white;
+        }
+        main>section{
 
-        section>img{
+        }
+
+        section>img{margin: 0;
             position: relative;
-            bottom: 820px;
-            left: 300px;
+          height: 100%;
+            width: calc(100%/3.02);
+            /*height: 300px;*/
+        }
+        section>section{
+            position: relative;
+            margin-left: 300px;
+
 
         }
 
         section>p{
-            position: relative;
+
+          margin-left: 300px;
             left: 300px;
             bottom: 800px;
         }
 
         footer>p{
-            border: solid grey 2px;
             height: 30px;
-            position: relative;
-            bottom: 785px;
+
             background-color: grey;
             text-align: center;
             color: white;
+
+        }
+        footer>p{
+            margin: 0;
         }
 
     </style>
@@ -77,7 +103,7 @@
 <body>
 
 <header>
-    <img src="assets/unix.png">
+    <img src="assests/unix.png">
 
     <ul >
         <li>Home</li>
@@ -98,9 +124,9 @@
 <section>
     <section>
 
-            <img src="assets/work.gif">
-            <img src="assets/work.gif">
-            <img src="assets/work.gif">
+            <img src="assests/work.gif">
+            <img src="assests/work.gif">
+            <img src="assests/work.gif">
 
     </section>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum eius et facere harum illo maiores
@@ -108,24 +134,8 @@
     <p>At doloremque error, iusto magnam maiores mollitia necessitatibus nobis, officiis omnis possimus provident
         ratione, saepe velit? Aspernatur blanditiis id illum maxime nemo numquam quam similique vero. At consequuntur
         quis sed.</p>
-    <p>Accusamus aut, dolore earum esse eum eveniet inventore libero molestias mollitia nihil, numquam odio officia
-        placeat porro praesentium quae, qui quisquam quod repellendus sapiente soluta suscipit ullam vel velit
-        vitae.</p>
-    <p>Aliquam, aspernatur at beatae blanditiis commodi consequatur consequuntur eius eos eveniet in iste labore
-        laudantium nam necessitatibus, nesciunt nobis non omnis placeat, quas quibusdam rem repellendus unde ut velit
-        voluptates?</p>
-    <p>Aliquam blanditiis deleniti dicta nisi, officiis suscipit temporibus. Accusamus amet consectetur eligendi facilis
-        hic illo maiores numquam officiis, perferendis quia quibusdam quisquam quod repellendus? Adipisci consectetur
-        dignissimos suscipit ut veritatis!</p>
-    <p>Consequatur deserunt eos illo iure quia, ullam? Accusantium enim inventore iusto quia reiciendis rerum tenetur,
-        voluptatem voluptatibus. Alias aspernatur cupiditate debitis ducimus natus possimus provident quam ut. Eius
-        incidunt, nulla.</p>
-    <p>Facere id ipsa ipsam, nesciunt quidem sint suscipit? Assumenda deleniti doloribus est fugiat id impedit labore
-        minus, modi molestias mollitia nesciunt non officiis, rem ullam, veritatis. Aspernatur autem dolorem
-        laboriosam.</p>
-    <p>Aliquam aliquid architecto aspernatur, at blanditiis dicta distinctio dolorum ducimus esse et eum impedit
-        incidunt iste iusto molestias nam nobis provident quibusdam quos ratione saepe sequi similique sint totam,
-        ullam.</p>
+
+
 </section>
 
 </main>
