@@ -6,6 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
 </head>
 <style>
         body{margin: 0 }
@@ -72,7 +79,7 @@
         top: -350px;
 background-size: cover;
         animation: gradiantDown;
-        animation-duration: 3s;
+        animation-duration: 8s;
         animation-fill-mode: forwards;
         background: url("assets/img/BackGradiant.png");
     }
@@ -172,13 +179,13 @@ background-size: cover;
                 left: -100px;
             } to{
                   left: 0px;
-            opacity: 100%;
+            opacity: 50%;
               }
         }
         .profilePhoto{
             position: absolute;
             top: 174px;
-
+            z-index: 0;
            right: -100px;
             width: 335px;
             height: 619px;
@@ -191,13 +198,39 @@ background-size: cover;
             animation-duration: 3s;
             animation-delay: 1s;
         }
+
+        .overCover{
+            position: absolute;
+            top: 582px;
+            left: 1052px;
+            right: -109px;
+            width: 467px;
+            height: 223px;
+            opacity: 0%;
+            margin: auto;
+            background-size: contain;
+            background-image: url("assets/img/Shape1.png");
+            animation: overCover;
+            animation-fill-mode: forwards;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        @keyframes overCover {
+            form {
+                right: -100px;
+            }
+            to {
+                right: 0px;
+                opacity: 800%;
+            }
+        }
         @keyframes profile {
             form {
                 right: -100px;
             }
             to {
                 right: 0px;
-                opacity: 50%;
+                opacity: 30%;
             }
         }
         .circle01{
@@ -210,14 +243,128 @@ background-size: cover;
             margin: auto;
             background-size: contain;
             background-image: url("assets/img/Ellipse4.png");
-            transition: profile;
-            transition: opacity 1s;
-            animation: circle01;
-            animation-duration: 150s;
+            animation: top, left, circle01 140s ,delay 1s;
+
+
+        }
+        .circle02{
+            position: absolute;
+            top: 576px;
+            left: 729px;
+            width: 77px;
+            height: 80px;
+            opacity: 00%;
+            margin: auto;
+            background-size: contain;
+            background-image: url(assets/img/Ellipse5.png);
+
+             animation: circle02;
+            animation-duration: 160s;
             animation-iteration-count: infinite;
             animation-delay: 1s;
-        } @keyframes circle01 {
-        5% ,10%{
+        }
+        .box1{
+            position: absolute;
+            top: 535px;
+            left: 729px;
+            width: 13px;
+            height: 14px;
+            opacity: 00%;
+            margin: auto;
+            background-size: contain;
+            background-image: url(assets/img/x1.png);
+
+             animation: box1;
+            animation-duration: 110s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        .box2{
+            position: absolute;
+            top: 268px;
+            left: 868px;
+            width: 44px;
+            height: 48px;
+            opacity: 00%;
+            margin: auto;
+            background-size: contain;
+            background-image: url(assets/img/Line1.png);
+
+           animation: box2;
+            animation-duration: 90s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes box2 {
+            2%{
+                opacity: 50%;
+
+            }
+            30%{
+                top: 344px;
+                left: 340px;
+            }
+            70% {
+                top: 692px;
+                left: 521px;
+            }
+            100% {
+
+            }
+        }
+        @keyframes box1 {
+            2%{
+                opacity: 50%;
+
+            }
+          30%{
+              top: 242px;
+              left: 621px;
+            }
+            70% {
+                top: 316px;
+                left: 319px;
+            }
+            100% {
+
+            }
+        }
+        @keyframes circle02 {
+            5%{
+                opacity: 50%;
+                top: 645px;
+                left: 581px;
+            }
+            10%{
+                top: 578px;
+                left: 422px;
+            }
+           30%{    top: 364px;
+                left: 133px;
+            }
+            50%{      top: 163px;
+                left: 230px;
+            }70%{
+                             top: 114px;
+                             left: 493px;
+             }
+
+            100% {
+
+            }
+        }
+
+        @keyframes fadeIn {
+                from{
+                    opacity: 0%;
+                }
+                to{
+                    opacity: 100%;
+                }
+            }
+
+        @keyframes circle01 {
+        5%{
             opacity: 50%;
               }
             20%{
@@ -239,7 +386,61 @@ background-size: cover;
 
               }
           }
+        .homeHeadLine1{
+            position: absolute;
+            opacity: 0%;
+            bottom: 450px;
+            left: 404px;
+            height: 27px;
+            color: white;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            font-family: 'Raleway', sans-serif;
+        }
+        .homeHeadLine2{
+            position: absolute;
+            bottom: 418px;
+            opacity: 0%;
+            left: 419px;
+            height: 27px;
+            color: white;
+            font-size: 31px;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+            font-family: 'Raleway', sans-serif;
+        }.homeHeadLine3{
+                     position: absolute;
+                     bottom: 337px;
+                     left: 528px;
+                     opacity: 0%;
+                     height: 27px;
+                     color: #9329ab;
+                     font-size: 106px;
+                     animation: fadeIn 2s;
+                        animation-fill-mode: forwards;
+                        animation-delay: 2s;
+                     font-family: 'Cormorant Garamond', serif;
+        }.homeHeadLine4{
+                              position: absolute;
+                              bottom: 330px;
+                              left: 797px;
+                              opacity: 0%;
+                              height: 27px;
+                              color: white;
+                              font-size: 23px;
+                              animation: fadeIn 2s;
+                              animation-fill-mode: forwards;
+                              animation-delay: 2.5s;
+            font-family: 'Raleway', sans-serif;
+        }
 
+
+/*------------------------------------------------------------------------------------------------------ABOUT*/
+        .aboutSection{
+            z-index: 10;
+        }
     section:nth-child(1) {
         background-color: white;
     }
@@ -266,13 +467,7 @@ background-size: cover;
 
     }
 
-    section:nth-child(2) > h1 {
-        position: relative;
-        bottom: 21px;
-        height: 55px;
 
-        color: white;
-    }
 
     section:nth-child(2) > p {
         color: black;
@@ -349,10 +544,17 @@ background-size: cover;
     <div class="profilePhoto"></div>
     <div class="circle01"></div>
     <div class="circle02"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="overCover"></div>
+    <h1 class="homeHeadLine1">Hello,</h1>
+    <h1 class="homeHeadLine2">My name is</h1>
+    <h1 class="homeHeadLine3">Udaya</h1>
+    <h1 class="homeHeadLine4">Madhushanka</h1>
 
 </section>
 
-<section> <!-------ABOUT Section________________------>
+<section class="aboutSection"> <!-------ABOUT Section________________------>
     <h1>Card 2</h1>
     <p>How</p>
 </section>
