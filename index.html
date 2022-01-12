@@ -3,12 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<style>
+        body{margin: 0 }
+
+        header{ /*------------------------------------------------------Header--------*/
+            width: 100%;
+            height: 60px;
+            background: #4f2f65;
+            position: fixed;
+            z-index: 100;
+            box-shadow: 0 2px 6px 2px rgba(1,1,3,0.78) ;
+        }
+
+        header>img{
+            opacity: 0%;
+            animation: backLeftCircle;
+            animation-duration: 5s;
+            left: -100px;
+            animation-fill-mode: forwards;
+            margin-top: 7px;
+            margin-left: 3px;
+            width: 150px;
+        }
+        header>ul{
+            position: absolute;
+            font-size: 20px;
+            right: 0;
+            bottom: -2px;
+            right: 69px;
+            font-family: 'Raleway', sans-serif;
+            list-style: none;
+            color: #d1bbff;
+
+
+
+        }
+        header>ul>li{
+            margin: 0 10px 0 20px;
+            display: inline-block;
+            color: #d1bbff;
+            transition:0.5s ;
+        }
+        header>ul>li:hover{
+            transition-property: all;
+            transition: 0.5s ;
+            cursor: pointer ;
+            color: white;
+            font-size: 22px ;
+
+        }
+    section {
+        background-color: #071533;
+        border: 0;
+        height: 790px;
+        width: 99.75%;
+        /*border: 2px solid white;*/
+        scroll-snap-type: y;
+        transition: 1s;
+    }
+    .backGradiant{  /*-----------------------------------------------------------------Home*/
+        position: relative;
+        width: 1400px;
+        height: 100%;
+        top: -350px;
+background-size: cover;
+        animation: gradiantDown;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        background: url("assets/img/BackGradiant.png");
+    }
+    @keyframes gradiantDown {
+    from{
+        top: -350px;
+    }to{
+        top: 0px;
+         }
+    }
+    .backCircle01{
+        position: absolute;
+        top: 56px;
+        right: -100px;
+        opacity: 0%;
+        width: 580px;
+        height: 790px;
+        animation: backCircle01;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+
+         background : url("assets/img/Ellipse 1.png");
+    }
+    @keyframes backCircle01 {
+        form{
+           right: -100px;
+        } to{
+                      right: 0px;
+        opacity: 100%;
+          }
+    }
+        .backCircle02 {
+            position: absolute;
+            top: 109px;
+            right: -200px;
+            width: 491px;
+            opacity: 0%;
+            height: 686px;
+            animation: backCircle01;
+            animation-fill-mode: forwards;
+            animation-duration: 1.5s;
+            animation-delay: 0.5s;
+            background: url("assets/img/Ellipse 2.png");
+    }
+
+    .backCircle03{
+        position: absolute;
+        top: 174px;
+        right: -300px;
+        width: 417px;
+        height: 622px;
+        opacity: 0%;
+        animation: backCircle01;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+        animation-delay: 1s;
+        background : url("assets/img/Ellipse 3.png");
+    }
+
+    .backLeftCircle01{
+        position: absolute;
+        top: 520px;
+        left: -100px;
+        opacity: 0%;
+        width: 295px;
+        height: 276px;
+        opacity: 0%;
+        animation: backLeftCircle;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        background : url("assets/img/EllipseBackBlue.png");
+    }
+        .backLeftCircle02{
+            position: absolute;
+            top: 470px;
+            left: -250px;
+            opacity: 0%;
+            width: 526px;
+            height: 323px;
+            opacity: 0%;
+            animation: backLeftCircle02;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            background : url("assets/img/EllipseKadairi1.png");
+        }
+        @keyframes backLeftCircle02 {
+            form{
+                left: -250px;
+            } to{
+                  left: -179px;
+                  opacity: 100%;
+              }
+        }
+        @keyframes backLeftCircle {
+            form{
+                left: -100px;
+            } to{
+                  left: 0px;
+            opacity: 100%;
+              }
+        }
+        .profilePhoto{
+            position: absolute;
+            top: 174px;
+
+           right: -100px;
+            width: 335px;
+            height: 619px;
+            opacity: 0%;
+            margin: auto;
+            background-size: contain;
+            background-image: url("assets/img/profile.png");
+            animation: profile;
+            animation-fill-mode: forwards;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        @keyframes profile {
+            form {
+                right: -100px;
+            }
+            to {
+                right: 0px;
+                opacity: 50%;
+            }
+        }
+        .circle01{
+            position: absolute;
+            top: 229px;
+            left: 278px;
+            width: 98px;
+            height: 98px;
+            opacity: 0%;
+            margin: auto;
+            background-size: contain;
+            background-image: url("assets/img/Ellipse4.png");
+            transition: profile;
+            transition: opacity 1s;
+            animation: circle01;
+            animation-duration: 150s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        } @keyframes circle01 {
+        5% ,10%{
+            opacity: 50%;
+              }
+            20%{
+                /*opacity: 100%;*/
+                top: 135px;
+                left: 637px;
+            }
+            40%{top: 321px;
+                left: 716px;
+            }
+            60%{    top: 475px;
+                left: 472px;
+            }80%{
+                             top: 416px;
+                             left: 252px;
+                         }
+
+              100% {
+
+              }
+          }
+
+    section:nth-child(1) {
+        background-color: white;
+    }
+
+    section > h1:nth-child(1) {
+        position: relative;
+        bottom: 21px;
+        height: 55px;
+        background-color: #FE351F;
+        color: white;
+    }
+
+    section:nth-child(1) > p {
+        color: black;
+        font-size: 100px;
+        position: absolute;
+        left: 650px;
+        top: 200px;
+        font-weight: bold;
+    }
+
+
+    section:nth-child(2) {
+
+    }
+
+    section:nth-child(2) > h1 {
+        position: relative;
+        bottom: 21px;
+        height: 55px;
+
+        color: white;
+    }
+
+    section:nth-child(2) > p {
+        color: black;
+        font-size: 100px;
+        position: absolute;
+        left: 650px;
+        top: 900px;
+        font-weight: bold;
+    }
+
+    section:nth-child(3) {
+
+    }
+
+    section:nth-child(3) > h1 {
+        position: relative;
+        bottom: 21px;
+        height: 55px;
+        color: white;
+        background-color: #292925;
+    }
+
+    section:nth-child(3) > p {
+        color: black;
+        font-size: 100px;
+        position: absolute;
+        left: 650px;
+        top: 1600px;
+        font-weight: bold;
+    }
+
+    section:nth-child(4) {
+        background-color: #EB3C28;
+    }
+
+    section:nth-child(4) > h1 {
+        position: relative;
+        bottom: 21px;
+        height: 55px;
+        color: white;
+        background-color: #7C322A;
+    }
+
+    section:nth-child(4) > p {
+        color: black;
+        font-size: 100px;
+        position: absolute;
+        left: 650px;
+        top: 2300px;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
+<header>
+    <img src="assets/img/logo.png">
 
-<h1>Institute of Software Engineering</h1>
-<h2>Batch - GDSE 57-58</h2>
-<h2>Hello There..!</h2>
+    <ul >
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>EDUCATION</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
+    </ul>
+</header>
+<section class="home"> <!-------Home Section_________________------>
+    <div class="backGradiant"> </div>
+    <div class="backCircle01"></div>
+    <div class="backCircle02"></div>
+    <div class="backCircle03"></div>
+    <div class="backLeftCircle01"></div>
+    <div class="backLeftCircle02"></div>
+    <div class="backLeftCircle01"></div>
+    <div class="profilePhoto"></div>
+    <div class="circle01"></div>
+    <div class="circle02"></div>
+
+</section>
+
+<section> <!-------ABOUT Section________________------>
+    <h1>Card 2</h1>
+    <p>How</p>
+</section>
+
+<section>
+    <h1>Card 3</h1>
+    <p>Are</p>
+</section>
+<section>
+    <h1>Card 4</h1>
+    <p>You..?</p>
+</section>
 
 </body>
 </html>
