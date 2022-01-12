@@ -55,11 +55,11 @@
             margin: 0 10px 0 20px;
             display: inline-block;
             color: #d1bbff;
-            transition:0.5s ;
+            transition:0.2s ;
         }
         header>ul>li:hover{
             transition-property: all;
-            transition: 0.5s ;
+            transition: 0.2s ;
             cursor: pointer ;
             color: white;
             font-size: 22px ;
@@ -67,7 +67,7 @@
         }
     section {
         /*border: 1px solid #071533;*/
-        border: 3px solid white;
+        /*border: 3px solid white;*/
         background-color: #071533;
 
         position: relative;
@@ -104,7 +104,6 @@ background-size: cover;
         animation: backCircle01;
         animation-fill-mode: forwards;
         animation-duration: 1.5s;
-
          background : url("assets/img/Ellipse 1.png");
     }
     @keyframes backCircle01 {
@@ -190,19 +189,20 @@ background-size: cover;
         }
         .profilePhoto{
             position: fixed;
-            top: 174px;
+            top: 23%;
             z-index: 0;
-           right: -100px;
-            width: 335px;
-            height: 619px;
+            right: 0%;
+            width: 22%;
+            height: 77%;
             opacity: 0%;
             margin: auto;
             background-size: contain;
-            background-image: url("assets/img/profile.png");
+            background-image: url(assets/img/profile.png);
             animation: profile;
             animation-fill-mode: forwards;
             animation-duration: 3s;
             animation-delay: 1s;
+
         }
 
         .overCover{
@@ -232,10 +232,10 @@ background-size: cover;
         }
         @keyframes profile {
             form {
-                right: -100px;
+                right: -9%;
             }
             to {
-                right: 0px;
+                right: 0%;
                 opacity: 50%;
             }
         }
@@ -470,7 +470,7 @@ background-size: cover;
 
         .btn{
             display: block;
-            font-size: 24px;
+            font-size: 18px;
             font-family: sans-serif;
             text-decoration: none;
             width: fit-content;
@@ -484,7 +484,7 @@ background-size: cover;
         }
 
         .btn:hover{
-            letter-spacing: 15px;
+            letter-spacing: 10px;
         }
 
         .buttonLearnMore {
