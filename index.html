@@ -58,6 +58,12 @@
         color: #d1bbff;
 
 
+    }
+    .fullSection{
+        position: relative;
+        height: 2711px;
+        width: 1521px;
+        background-color: #071533;
 
     }
     .navHome{
@@ -95,15 +101,16 @@
         font-size: 22px ;
 
     }
-    section {
+    section>section {
         /*border: 1px solid #071533;*/
         /*border: 3px solid white;*/
-        background-color: #071533;
+        /*background-color: #071533;*/
 
         position: relative;
         height: 790px;
         width: 1519px;
         scroll-snap-type: y;
+        /*-ms-scroll-snap-x: unset;*/
         transition: 1s;
     }
     .backGradiant{  /*-----------------------------------------------------------------Home*/
@@ -544,9 +551,14 @@
         /*position: absolute;*/
     }
     .aboutProfile{
-        background: url("assets/img/aboutProfile.png");
-        height: 100%;
-        width: 42%;
+        background: url(assets/img/aboutProfile.png);
+        height: 98%;
+        top: 1%;
+        left: 0%;
+        background-size: cover;
+        width: 36%;
+        margin: auto;
+        position: absolute;
     }
 
     .aboutGradiant {
@@ -580,6 +592,172 @@
         .aboutParagraph{
             color: #6e0074;
         }
+        section>section {
+            /* border: 1px solid #071533; */
+            /* border: 3px solid white; */
+            /* background-color: #071533; */
+            position: relative;
+            height: 2447px;
+            width: 1519px;
+            scroll-snap-type: y;
+            /* -ms-scroll-snap-x: unset; */
+            transition: 1s;}
+        .backGradiant {
+            position: relative;
+            background-size: contain;
+            width: 1383px;
+            height: 883px;
+            top: -350px;
+            background-size: cover;
+            animation: gradiantDown;
+            animation-duration: 8s;
+            animation-fill-mode: forwards;
+            background: url(assets/img/BackGradiant.png);
+        }header>ul {
+             position: absolute;
+             font-size: 269%;
+             /* right: 0; */
+             bottom: 10%;
+             /* right: 57%; */
+             left: 13%;
+             margin: auto;
+             font-family: 'Raleway', sans-serif;
+             list-style: none;
+             color: #d1bbff;
+         }.backCircle01 {
+              position: absolute;
+              top: -1%;
+              right: 0%;
+              opacity: 00%;
+              background-size: 300%;
+              background-repeat: 0;
+              width: 42%;
+              height: 100%;
+              animation: backCircle01;
+              animation-fill-mode: forwards;
+              animation-duration: 1.5s;
+              background-image: url(assets/img/Ellipse 1.png);
+          }.backCircle02 {
+               position: absolute;
+               top: 143px;
+               right: -200px;
+               background-size: 300%;
+               width: 36%;
+               opacity: 0%;
+               height: 93%;
+               animation: backCircle01;
+               animation-fill-mode: forwards;
+               animation-duration: 1.5s;
+               animation-delay: 0.5s;
+               background-image: url(assets/img/Ellipse 2.png);
+           }
+        .homeHeadLine4 {
+            position: absolute;
+            bottom: 42%;
+            right: 33%;
+            opacity: 0%;
+            height: 27px;
+            color: white;
+            font-size: 43px;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 3.5s;
+            font-family: 'Raleway', sans-serif;
+        }
+        .homeHeadLine3 {
+            position: absolute;
+            bottom: 42%;
+            right: 42%;
+            opacity: 0%;
+            height: 98px;
+            color: #9329ab;
+            font-size: 279px;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .homeHeadLine2 {
+            position: absolute;
+            bottom: 53%;
+            opacity: 0%;
+            right: 62%;
+            height: 138px;
+            color: white;
+            font-size: 91px;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+            font-family: 'Raleway', sans-serif;
+        }
+        .homeHeadLine1 {
+            position: absolute;
+            opacity: 0%;
+            bottom: 62%;
+            right: 80%;
+            height: 40px;
+            font-size: 79px;
+            color: white;
+            animation: fadeIn 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            font-family: 'Raleway', sans-serif;
+        }
+        .profilePhoto {
+            position: absolute;
+            top: 38%;
+            z-index: 0;
+            right: -10%;
+            width: 633px;
+            height: 63%;
+            opacity: 0%;
+            /* margin: auto; */
+            background-size: cover;
+            background-image: url(assets/img/profile.png);
+            animation: profile;
+            animation-fill-mode: forwards;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        .backCircle03 {
+                position: absolute;
+                top: 535px;
+                right: -17px;
+                width: -12%;
+                height: 109%;
+                opacity: 0%;
+                background-size: cover;
+                animation: backCircle01;
+                animation-fill-mode: forwards;
+                animation-duration: 1.5s;
+                animation-delay: 1s;
+                background-image: url(assets/img/Ellipse 3.png);
+            }
+        header {
+            width: 100%;
+            height: 197px;
+            backdrop-filter: blur(10px);
+            background: rgba(54,11,86,0.2);
+            position: fixed;
+            z-index: 100;
+            box-shadow: 0 2px 6px 2px rgb(0 0 0 / 31%);
+        }
+        header>img {
+            opacity: 0%;
+            /* position: absolute; */
+            animation: backLeftCircle;
+            animation-duration: 5s;
+            left: 80px;
+            right: 90px;
+            animation-fill-mode: forwards;
+            margin-top: 13px;
+            /* margin-left: 3px; */
+            width: 300px;
+            margin-left: 43%;
+            /* margin: auto; */
+            /* margin-right: 0; */
+            transition: all 1s;
+        }
     }
 </style>
 </head>
@@ -595,6 +773,48 @@
         <li class="navContact">CONTACT</li>
     </ul>
 </header>
+<section class="fullSection">
+    <section class="home"> <!-------Home Section_________________------>
+        <div class="backGradiant"> </div>
+        <div class="backCircle01"></div>
+        <div class="backCircle02"></div>
+        <div class="backCircle03"></div>
+        <div class="backLeftCircle01"></div>
+        <div class="backLeftCircle02"></div>
+        <div class="backLeftCircle01"></div>
+        <div class="profilePhoto"></div>
+        <div class="circle01"></div>
+        <div class="circle02"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="overCover"></div>
+        <h1 class="homeHeadLine1">Hello,</h1>
+        <h1 class="homeHeadLine2">My name is</h1>
+        <h1 class="homeHeadLine3">Udaya</h1>
+        <h1 class="homeHeadLine4">Madhushanka</h1>
+        <div class="wrapper">
+            <a class="btn">Learn More</a>
+        </div>
+
+    </section>
+
+    <section class="aboutSection"> <!-------ABOUT Section__________________________________________------>
+        <div class="aboutProfile"></div>
+        <div class="aboutGradiant"></div>
+        <h1 class="aboutHello">Hello,</h1>
+        <p class="aboutParagraph">
+            Computer programmers write and test code that allows computer applications and programs to function. They may translate designs from software developers and engineers into workable code. They may also update or expand the code of existing programs or test programs for errors, finding and resolving faulty lines of code
+        </p>
+    </section>
+
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+
+
 <section class="home"> <!-------Home Section_________________------>
     <div class="backGradiant"> </div>
     <div class="backCircle01"></div>
@@ -634,6 +854,6 @@
 <section>
 
 </section>
-
+</section>
 </body>
 </html>
