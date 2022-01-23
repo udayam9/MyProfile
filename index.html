@@ -226,14 +226,14 @@
     }
     .profilePhoto{
         position: absolute;
-        top: 23%;
+        bottom: 0%;
         z-index: 0;
         right: -9%;
-        width: 334px;
-        height: 77%;
-        opacity: 0%;
-        margin: auto;
-        background-size: contain;
+        width: 22%;
+        height: 78%;
+        opacity:0%;
+        /* margin: auto; */
+        background-size: cover;
         background-image: url(assets/img/profile.png);
         animation: profile;
         animation-fill-mode: forwards;
@@ -587,7 +587,7 @@
         font-size: 105%;
         color: #bf9fcf;
     }
-
+/*----------------------------------------------------------------------------------media block-----------------------*/
     @media all and (max-width:425px) {
         .aboutParagraph{
             color: #6e0074;
@@ -598,7 +598,7 @@
             /* background-color: #071533; */
             position: relative;
             height: 2447px;
-            width: 1519px;
+            width: 100%;
             scroll-snap-type: y;
             /* -ms-scroll-snap-x: unset; */
             transition: 1s;}
@@ -758,6 +758,9 @@
             /* margin-right: 0; */
             transition: all 1s;
         }
+        .fullSection{
+            width: 374vw;
+        }
     }
 </style>
 </head>
@@ -815,45 +818,7 @@
     </section>
 
 
-<section class="home"> <!-------Home Section_________________------>
-    <div class="backGradiant"> </div>
-    <div class="backCircle01"></div>
-    <div class="backCircle02"></div>
-    <div class="backCircle03"></div>
-    <div class="backLeftCircle01"></div>
-    <div class="backLeftCircle02"></div>
-    <div class="backLeftCircle01"></div>
-    <div class="profilePhoto"></div>
-    <div class="circle01"></div>
-    <div class="circle02"></div>
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="overCover"></div>
-    <h1 class="homeHeadLine1">Hello,</h1>
-    <h1 class="homeHeadLine2">My name is</h1>
-    <h1 class="homeHeadLine3">Udaya</h1>
-    <h1 class="homeHeadLine4">Madhushanka</h1>
-    <div class="wrapper">
-        <a class="btn">Learn More</a>
-    </div>
 
-</section>
-
-<section class="aboutSection"> <!-------ABOUT Section__________________________________________------>
-    <div class="aboutProfile"></div>
-    <div class="aboutGradiant"></div>
-    <h1 class="aboutHello">Hello,</h1>
-    <p class="aboutParagraph">
-        Computer programmers write and test code that allows computer applications and programs to function. They may translate designs from software developers and engineers into workable code. They may also update or expand the code of existing programs or test programs for errors, finding and resolving faulty lines of code
-    </p>
-</section>
-
-<section>
-
-</section>
-<section>
-
-</section>
 </section>
 </body>
 </html>
