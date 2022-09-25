@@ -12,12 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS Framworks/BootstrapPOS/assets/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <style>
     body{
         position: relative;
+        background-color: #071533;
         margin: 0 }
 
     header{ /*------------------------------------------------------Header--------*/
@@ -101,13 +104,16 @@
         font-size: 22px ;
 
     }
+    section{
+        background-color: #071533;
+    }
     section>section {
         /*border: 1px solid #071533;*/
         /*border: 3px solid white;*/
         /*background-color: #071533;*/
-
+        background-color: #071533;
         position: relative;
-        height: 790px;
+        height: 100vh;
         width: 100%;
         scroll-snap-type: y;
         /*-ms-scroll-snap-x: unset;*/
@@ -136,8 +142,8 @@
         top: 56px;
         right: -100px;
         opacity: 0%;
-        width: 45%;
-        height: 790px;
+        width: 39%;
+        height: 93vh;
         animation: backCircle01;
         animation-fill-mode: forwards;
         animation-duration: 1.5s;
@@ -155,9 +161,9 @@
         position: absolute;
         top: 109px;
         right: -200px;
-        width: 38%;
+        width: 33%;
         opacity: 0%;
-        height: 686px;
+        height: 86vh;
         animation: backCircle01;
         animation-fill-mode: forwards;
         animation-duration: 1.5s;
@@ -170,8 +176,8 @@
         position: absolute;
         top: 174px;
         right: -300px;
-        width: 33%;
-        height: 622px;
+        width: 27%;
+        height: 78vh;
         opacity: 0%;
         animation: backCircle01;
         animation-fill-mode: forwards;
@@ -229,8 +235,8 @@
         bottom: 0%;
         z-index: 0;
         right: -9%;
-        width: 22%;
-        height: 78%;
+        width: 42vh;
+        height: 77vh;
         opacity:0%;
         /* margin: auto; */
         background-size: cover;
@@ -447,7 +453,7 @@
         opacity: 0%;
         bottom: 57%;
         right: 71%;
-        height: 27px;
+        font-size:5vh;
         color: white;
         animation: fadeIn 2s;
         animation-fill-mode: forwards;
@@ -456,36 +462,36 @@
     }
     .homeHeadLine2{
         position: absolute;
-        bottom: 53%;
+        bottom: 54%;
         opacity: 0%;
         right: 62%;
-        height: 27px;
+        font-size:5vh;
+        height: 4%;
         color: white;
-        font-size: 31px;
         animation: fadeIn 2s;
         animation-fill-mode: forwards;
         animation-delay: 1.5s;
         font-family: 'Raleway', sans-serif;
     }.homeHeadLine3{
          position: absolute;
-         bottom: 42%;
+         bottom: 30%;
          right: 49%;
          opacity: 0%;
-         height: 27px;
+
          color: #9329ab;
-         font-size: 106px;
+         font-size: 14vh;
          animation: fadeIn 2s;
          animation-fill-mode: forwards;
          animation-delay: 3s;
          font-family: 'Cormorant Garamond', serif;
      }.homeHeadLine4{
           position: absolute;
-          bottom: 38%;
-          right: 38%;
+          bottom:40%;
+          right: 40%;
           opacity: 0%;
-          height: 27px;
+
           color: white;
-          font-size: 23px;
+          font-size: 3vh;
           animation: fadeIn 2s;
           animation-fill-mode: forwards;
           animation-delay: 3.5s;
@@ -587,7 +593,482 @@
         font-size: 105%;
         color: #bf9fcf;
     }
-/*----------------------------------------------------------------------------------media block-----------------------*/
+
+    /*--------------------------------------------------------------
+# Akills
+--------------------------------------------------------------*/
+    .skills .progress {
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+    }
+    .skills .progress .skill {
+        padding: 10px 0;
+        margin: 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #45505b;
+    }
+    .skills .progress .skill .val {
+        float: right;
+        font-style: normal;
+    }
+    .skills .progress-bar-wrap {
+        background: #f2f3f5;
+    }
+    .skills .progress-bar {
+        width: 1px;
+        height: 10px;
+        transition: 0.9s;
+        background-color: #0563bb;
+    }
+
+<!--------------------------------EDUCATION-------------------------------------------------
+    .resume{
+        height: fit-content;
+
+    }
+    .resume .resume-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #efbfff;
+    }
+    /*.resume .section-title>*/
+    h2 {
+        font-size:100px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #efbfff;
+    }
+    .resume .resume-item {
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 2px solid #b65ad9;
+        position: relative;
+    }
+    .resume .resume-item h4 {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #b65ad9;
+        margin-bottom: 10px;
+    }
+    h3{
+        -webkit-text-fill-color: rgb(123, 202, 255);
+    }
+    .resume .resume-item h5 {
+        font-size: 16px;
+       background-color: rgba(160, 51, 255, 0.11);
+        border-radius: 50px;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .resume .resume-item ul {
+        padding-left: 20px;
+    }
+    .resume .resume-item ul li {
+        padding-bottom: 10px;
+    }
+    .resume .resume-item>div>* {
+        -webkit-text-fill-color: #775882;
+    }
+    .resume .resume-item:last-child {
+        padding-bottom: 0;
+    }
+    .resume .resume-item::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #5f7ce0;
+        border: 2px solid #223c95;
+    }
+    /*--------------------------------------------------------------
+    # Portfolio
+    --------------------------------------------------------------*/
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+    }
+    .portfolio #portfolio-flters {
+        padding: 0;
+        margin: 0 auto 25px auto;
+        list-style: none;
+        text-align: center;
+        background: #fff;
+        border-radius: 50px;
+        padding: 2px 15px;
+    }
+    .portfolio #portfolio-flters li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #272829;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+        color: #0563bb;
+    }
+    .portfolio #portfolio-flters li:last-child {
+        margin-right: 0;
+    }
+    .portfolio .portfolio-wrap {
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background: rgba(69, 80, 91, 0.8);
+    }
+    .portfolio .portfolio-wrap::before {
+        content: "";
+        background: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 30px;
+        bottom: 30px;
+        transition: all ease-in-out 0.3s;
+        z-index: 2;
+        opacity: 0;
+    }
+    .portfolio .portfolio-wrap .portfolio-info {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        z-index: 3;
+        transition: all ease-in-out 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio .portfolio-wrap .portfolio-info::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        border-top: 3px solid #d7dce1;
+        border-left: 3px solid #d7dce1;
+        transition: all 0.5s ease 0s;
+        z-index: 9994;
+    }
+    .portfolio .portfolio-wrap .portfolio-info::after {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        border-bottom: 3px solid #d7dce1;
+        border-right: 3px solid #d7dce1;
+        transition: all 0.5s ease 0s;
+        z-index: 9994;
+    }
+    .portfolio .portfolio-wrap .portfolio-info h4 {
+        font-size: 20px;
+        color: #45505b;
+        font-weight: 600;
+    }
+    .portfolio .portfolio-wrap .portfolio-info p {
+        color: #45505b;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+    .portfolio .portfolio-wrap .portfolio-links {
+        text-align: center;
+        z-index: 4;
+    }
+    .portfolio .portfolio-wrap .portfolio-links a {
+        color: #45505b;
+        margin: 0 2px;
+        font-size: 28px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    .portfolio .portfolio-wrap .portfolio-links a:hover {
+        color: #148af9;
+    }
+    .portfolio .portfolio-wrap:hover::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    .portfolio .portfolio-wrap:hover .portfolio-info {
+        opacity: 1;
+    }
+    .portfolio .portfolio-wrap:hover .portfolio-info::before {
+        top: 15px;
+        left: 15px;
+    }
+    .portfolio .portfolio-wrap:hover .portfolio-info::after {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /*--------------------------------------------------------------
+ # Portfolio Details
+ --------------------------------------------------------------*/
+    .portfolio-details {
+        padding-top: 40px;
+    }
+    .portfolio-details .portfolio-details-slider img {
+        width: 100%;
+    }
+    .portfolio-details .portfolio-details-slider .swiper-pagination {
+        margin-top: 20px;
+        position: relative;
+    }
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        opacity: 1;
+        border: 1px solid #0563bb;
+    }
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #0563bb;
+    }
+    .portfolio-details .portfolio-info {
+        padding: 30px;
+        box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+    }
+    .portfolio-details .portfolio-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .portfolio-details .portfolio-info ul {
+        list-style: none;
+        padding: 0;
+        font-size: 15px;
+    }
+    .portfolio-details .portfolio-info ul li + li {
+        margin-top: 10px;
+    }
+    .portfolio-details .portfolio-description {
+        padding-top: 30px;
+    }
+    .portfolio-details .portfolio-description h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .portfolio-details .portfolio-description p {
+        padding: 0;
+    }
+    /*--------------------------------------------------------------
+    # Contact
+    --------------------------------------------------------------*/
+    .contact .info {
+        width: 100%;
+
+    }
+    .info>div{
+        -webkit-text-fill-color: rgb(188, 160, 220);
+    }
+    .contact .info i {
+        font-size: 20px;
+        color: #0563bb;
+        float: left;
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #45505b;
+    }
+    .contact .info p {
+        padding: 0 0 0 60px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #728394;
+    }
+    .contact .info .email, .contact .info .phone {
+        margin-top: 40px;
+    }
+    .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+        background: #0563bb;
+        color: #fff;
+    }
+    .contact .php-email-form {
+        width: 100%;
+
+    }
+    .contact .php-email-form .form-group {
+        padding-bottom: 8px;
+    }
+    .contact .php-email-form .error-message {
+        display: none;
+        color: #fff;
+        background: #ed3c0d;
+        text-align: left;
+        padding: 15px;
+        font-weight: 600;
+    }
+
+    .contact .php-email-form .error-message br + br {
+        margin-top: 25px;
+    }
+    .contact .php-email-form .sent-message {
+        display: none;
+        color: #fff;
+        background: #18d26e;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+    }
+    .contact .php-email-form .loading {
+        display: none;
+        background: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+    .contact .php-email-form .loading:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        -webkit-animation: animate-loading 1s linear infinite;
+        animation: animate-loading 1s linear infinite;
+    }
+    .contact .php-email-form input, .contact .php-email-form textarea {
+        border-radius: 4px;
+        box-shadow: none;
+        font-size: 14px;
+    }
+    .contact .php-email-form input {
+        height: 44px;
+    }
+    .contact .php-email-form textarea {
+        padding: 10px 12px;
+    }
+    .contact .php-email-form button[type=submit] {
+        background: #0563bb;
+        border: 0;
+        padding: 10px 35px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 50px;
+    }
+    .contact .php-email-form button[type=submit]:hover {
+        background: #0678e3;
+    }
+    @-webkit-keyframes animate-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes animate-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+    #footer {
+        background: #f7f8f9;
+        color: #45505b;
+        font-size: 14px;
+        text-align: center;
+        padding: 30px 0;
+    }
+    #footer h3 {
+        font-size: 36px;
+        font-weight: 700;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
+    #footer p {
+        font-size: 15;
+        font-style: italic;
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
+    #footer .social-links {
+        margin: 0 0 40px 0;
+    }
+    #footer .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #0563bb;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+    #footer .social-links a:hover {
+        background: #0678e3;
+        color: #fff;
+        text-decoration: none;
+    }
+    #footer .copyright {
+        margin: 0 0 5px 0;
+    }
+    #footer .credits {
+        font-size: 13px;
+    }
+    .footer{
+        height: max-content;
+    }
+    /*----------------------------------------------------------------------------------media block-----------------------*/
     @media all and (max-width:425px) {
         .aboutParagraph{
             color: #6e0074;
@@ -761,23 +1242,27 @@
         .fullSection{
             width: 374vw;
         }
+
     }
+
+
 </style>
 </head>
 <body>
+
 <header>
     <img src="assets/img/logo.png">
 
     <ul >
-        <li class="navHome">HOME</li>
+        <li href="#home" class="navHome " >HOME</li>
         <li class="navAbout">ABOUT</li>
         <li class="navEdu">EDUCATION</li>
         <li class="navProjects">PROJECTS</li>
         <li class="navContact">CONTACT</li>
     </ul>
 </header>
-<section class="fullSection">
-    <section class="home"> <!-------Home Section_________________------>
+<section class="fullSection ">
+    <section class="home" id="home"> <!-------Home Section_________________------>
         <div class="backGradiant"> </div>
         <div class="backCircle01"></div>
         <div class="backCircle02"></div>
@@ -801,6 +1286,8 @@
 
     </section>
 
+
+
     <section class="aboutSection"> <!-------ABOUT Section__________________________________________------>
         <div class="aboutProfile"></div>
         <div class="aboutGradiant"></div>
@@ -810,15 +1297,282 @@
         </p>
     </section>
 
-    <section>
 
-    </section>
-    <section>
+<!--//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>              -Education  statrs          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <section class="resume" id="resume">
+    <div class="container" data-aos="fade-up">
 
-    </section>
+        <div class="section-title">
+            <h2>EDUCATIONS</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Summary</h3>
+                <div class="resume-item pb-0">
+                    <h4>UDaya Madhushanka</h4>
+                   <div>
+                       <p><em>Learning the Software Engineering field and new technologies. </em></p>
+                       <ul>
+
+                           <li>+94 766552208</li>
+                           <li>udaya.madhushanka@gmail.com</li>
+                       </ul>
+                   </div>
+                </div>
+
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4>Graduate Diploma In Software Engineering</h4>
+                   <div>
+                       <h5>2022 - present</h5>
+                       <p><em>Institute Of Java and Software Enginnering</em></p>
+                       <p>Studying in Software Engineering at IJSE .</p>
+                   </div>
+                </div>
+
+                <div class="resume-item">
+                    <h4>Advanced Level(Commerce Stream)</h4>
+                   <div>
+                       <h5>2016 - 2018</h5>
+                       <p><em>MR/ Thelijjawila Central Collage</em></p>
+                   </div>
+                </div>
 
 
+                <div class="resume-item">
+                    <h4>Ordinary Level</h4>
+                   <div>
+                       <h5>2013</h5>
+                       <p><em>MR/ Lenama Junior School</em></p>
+                   </div>
+                </div>
 
+                <div class="resume-item">
+                    <h4>Primary Education</h4>
+                   <div>
+                       <h5>2005</h5>
+                       <p><em>MR/ Lenama Junior School</em></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
+    <!--------------------------End EDUCATIUONS-------------------------->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section class="portfolio " id="portfolio">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li class="filter-active" data-filter="*">All</li>
+                        <li data-filter=".filter-app">Desktop</li>
+                        <li data-filter=".filter-web">Web</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/1.png">
+                        <div class="portfolio-info">
+                            <h4>Timber Mill Management System</h4>
+                            <p>Desktop Application(Java,JavaFx,MySQL,JasperReports)</p>
+                            <div class="portfolio-links">
+                                <a class="portfolio-lightbox" data-gallery="portfolioGallery"
+                                   href="assets/img/portfolio/1.png" title="Timber Mill Management System"><i
+                                        class="bx bx-plus"></i></a>
+                                <a class="portfolio-details-lightbox" data-glightbox="type: external"
+                                   href="https://github.com/oshadaera68/Mind_Art_LK_Final_Project"
+                                   title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web1.png">
+                        <div class="portfolio-info">
+                            <h4>My Profile v0.1.0</h4>
+                            <p>Web Designing(html,css,javascript)</p>
+                            <div class="portfolio-links">
+                                <a class="portfolio-lightbox" data-gallery="portfolioGallery"
+                                   href="assets/img/portfolio/web1.png" title="My Profile v0.1.0"><i
+                                        class="bx bx-plus"></i></a>
+                                <a class="portfolio-details-lightbox" data-glightbox="type: external"
+                                   href="https://github.com/oshadaera68/Work-Area" title="Portfolio Details"><i
+                                        class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/2.png">
+                        <div class="portfolio-info">
+                            <h4>Sipsewana Institute LMS</h4>
+                            <p>Desktop Application(Hibernate,JDBC,JavaFX,Java,MySQL)</p>
+                            <div class="portfolio-links">
+                                <a class="portfolio-lightbox" data-gallery="portfolioGallery"
+                                   href="assets/img/portfolio/2.png" title="Sipsewana Institute LMS"><i
+                                        class="bx bx-plus"></i></a>
+                                <a class="portfolio-details-lightbox" data-glightbox="type: external"
+                                   href="https://github.com/oshadaera68/Hibernate-Coursework" title="Portfolio Details"><i
+                                        class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/3.png">
+                        <div class="portfolio-info">
+                            <h4>Supermarket System</h4>
+                            <p>Desktop Application(Java,JavaFx,MySQL,JasperReports)</p>
+                            <div class="portfolio-links">
+                                <a class="portfolio-lightbox" data-gallery="portfolioGallery"
+                                   href="assets/img/portfolio/3.png" title="Supermarket System"><i
+                                        class="bx bx-plus"></i></a>
+                                <a class="portfolio-details-lightbox" data-glightbox="type: external"
+                                   href="https://github.com/oshadaera68/SupplierSystem_for_Layered_Architecture"
+                                   title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web.png">
+                        <div class="portfolio-info">
+                            <h4>Web POS System v0.1.1(In memory)</h4>
+                            <p>Web Application(JavaScript,Bootstrap,jQuery)</p>
+                            <div class="portfolio-links">
+                                <a class="portfolio-lightbox" data-gallery="portfolioGallery"
+                                   href="assets/img/portfolio/web.png" title="Web POS System v0.1.1(In memory)"><i
+                                        class="bx bx-plus"></i></a>
+                                <a class="portfolio-details-lightbox" data-glightbox="type: external"
+                                   href="https://github.com/oshadaera68/POS-System-v0.1.2-updated-version-"
+                                   title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Contact Section ======= -->
+    <section class="contact " id="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="row mt-1">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Matara, Akuressa.</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>udaya.madhushanka@gmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+94 766552208</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="forms/contact.php" class="php-email-form" method="post" role="form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Your Name" required
+                                       type="text">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input class="form-control" id="email" name="email" placeholder="Your Email"
+                                       required type="email">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input class="form-control" id="subject" name="subject" placeholder="Subject" required
+                                   type="text">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" placeholder="Message" required
+                                      rows="5"></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+<section class="footer">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Udaya Madhushanka</h3>
+            <p>Full Stack Developer </p>
+            <div class="social-links">
+                <a class="twitter" href="#"><i class="bx bxl-twitter"></i></a>
+                <a class="facebook" href="#"><i class="bx bxl-facebook"></i></a>
+                <a class="instagram" href="#"><i class="bx bxl-instagram"></i></a>
+                <a class="youtube" href="#"><i class="bx bxl-youtube"></i></a>
+                <a class="linkedin" href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>udaya madhushnaka</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: [license-url] -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+</section>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
